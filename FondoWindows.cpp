@@ -15,7 +15,7 @@ void habilitarANSI()
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
     DWORD modo;
     GetConsoleMode(hOut, &modo);
-    modo |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+    modo = ENABLE_VIRTUAL_TERMINAL_PROCESSING;
     SetConsoleMode(hOut, modo);
 }
 
@@ -37,7 +37,7 @@ bool esParteDelOvalado(int x, int y, int cx, int cy, int radioX, int radioY)
 }
 
 // Dibuja el fondo completo con óvalos blancos en la pradera
-vvoid fondoConOvalos()
+void fondoConOvalos()
 {
     int filas, columnas;
     obtenerTamanoTerminal(filas, columnas);
