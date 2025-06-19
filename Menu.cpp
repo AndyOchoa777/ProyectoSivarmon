@@ -1,27 +1,191 @@
+// #include <iostream>
+// #include <string>
+
+// using namespace std;
+
+// int main(){
+
+//     int terminal_width = 85;
+
+// vector<string> owl = {
+
+// " ********************************************************************************* \t",
+// " *..######..####.##.....##....###....########..##.....##..#######..##....##......* \t",
+// " *.##....##..##..##.....##...##.##...##.....##.###...###.##.....##.###...##......* \t",
+// " *.##........##..##.....##..##...##..##.....##.####.####.##.....##.####..##......* \t",
+// " *..######...##..##.....##.##.....##.########..##.###.##.##.....##.##.##.##......* \t",
+// " *.......##..##...##...##..#########.##...##...##.....##.##.....##.##..####......* \t",
+// " *.##....##..##....##.##...##.....##.##....##..##.....##.##.....##.##...###......* \t",
+// " *..######..####....###....##.....##.##.....##.##.....##..#######..##....##......* \t",
+// " ********************************************************************************* \t",
+
+// "  \n",
+// " Seleccione el origen de su Sivarmon\n",
+// "  \n",
+
+//         "                          ---:::::--=     =                                                         ",
+//         "                         -::::::::::--------                                                        ",
+//         "                         -::::::::::::--------                                                       ",
+//         "                          -::::::::::----------                                                      ",
+//         "                          -::::::::-------------+                                                    ",
+//         "                      ::::::::::::---==++*+++-------= -                                              ",
+//         "                    :::::=====-:--------------=+==---=--=                                           ",
+//         "                   -::::::===-:-----------=------=+=-----                    ===                    ",
+//         "             =-------::::::::::------::--====-------------====            :::::::                   ",
+//         "           =-----==---::::::::::-----::=-=++==-------------------         :::::::                   ",
+//         "         ------++----::::::::::--------=-=+*+====----------------        ::::::::-    =---=         ",
+//         "       =-----+=---=====:::::::--------:==-==+*==----==+++++++----==-------:::::::::::------=        ",
+//         "      =----=+-----======:=-:::--------::+=-==+*+==------------------------:==------::-------=+      ",
+//         "      =--=+=------======+++===-------::::=-:-=**====---::::---------------::::::::::---------=      ",
+//         "      +----------=====+*++====--++=--:::::-+-==+====::::::::::::----------::::::::::--------=       ",
+//         "          ==========+#+=====-==++++++-:::::::-=====-:::--=-::::::===------:::::::::::-------=       ",
+//         "             *+====++=======----------:::::--------::-=====+:::=======-----:::::::::--------=       ",
+//         "                +=++=======------------::------------:::::::=========--=++=---:::::--------=        ",
+//         "                *=+++++==--------------::-------------::::-===========++++=+=--------------+        ",
+//         "                           ++++==-----------=+==+=---:::::-===========-----------------++==--*      ",
+//         "                                      ==---------==---::::===========---------------==+-=----       ",
+//         "                                          +------------:-==++*+*+**+==-------------=+---+ =--=      ",
+//         "                                             =--------::-===============-----------==----=          ",
+//         "                                                  =--:-=====================---------------*+       ",
+//         "                                                     ++=====================-------------+==++      ",
+//         "                                                            +++++=============--------+     +-+      "
+//     };
+
+//     for (const string &line : owl) {
+//         int padding = terminal_width - static_cast<int>(line.length());
+//         if (padding < 0) padding = 0;
+//         cout << string(padding, ' ') << line << endl;
+//     }
+
+// vector<string> left = {
+
+// "",
+// "",
+
+//  "--------------------------------------------------------\t",
+//  "| 1. Ahuchapan              |      2. Santa Soul       |\t",
+//  "| 3. Sonsonate              |      4. Chalate          |\t",
+//  "| 5. La libertad            |      6. San Salvador     |\t",
+//  "| 7. Cuscatlan              |      8. La paz           |\t",
+//  "| 9. Not found              |      10. San vicente     |\t",
+//  "| 11. Usulutan              |      12. San miguel      |\t",
+//  "| 13. Mora(not the singer)  |      14. La Union        |\t",
+//  "--------------------------------------------------------\t",
+
+// };
+
+// vector<string> right = {
+
+// };
+//     int left_width = -10;
+
+//     int max_lines = max(left.size(), right.size());
+
+//     for (int i = 0; i < max_lines; ++i) {
+//         string left_line = (i < (int)left.size()) ? left[i] : "";
+//         string right_line = (i < (int)right.size()) ? right[i] : "";
+
+//         int space_count = terminal_width - (int)left_line.length() - (int)right_line.length();
+//         if (space_count < 1) space_count = 1;
+
+//         cout << left_line << string(space_count, ' ') << right_line << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <sys/ioctl.h>
+// #include <unistd.h>
+
+// // Códigos ANSI para colores de fondo
+// #define RESET      "\033[0m"
+// #define BG_BLUE    "\033[44m"
+
+// // Función para obtener el tamaño actual de la terminal
+// void obtenerTamanoTerminal(int &filas, int &columnas) {
+//     struct winsize w;
+//     ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
+//     filas = w.ws_row;
+//     columnas = w.ws_col;
+// }
+
+// // Función para dibujar fondo azul (arriba) y verde (abajo)
+// void fondoAzul() {
+//     int filas, columnas;
+//     obtenerTamanoTerminal(filas, columnas);
+
+//     int mitad = filas;
+
+//     for (int i = 0; i < filas; ++i) {
+//         std::string color = BG_BLUE ;
+//         std::cout << color;
+
+//         for (int j = 0; j < columnas; ++j) {
+//             std::cout << " ";
+//         }
+
+//         std::cout << RESET << std::endl;
+//     }
+// }
+
 #include <iostream>
 #include <string>
+#include <vector>
+#include <sys/ioctl.h>
+#include <unistd.h>
+
+// Carpeta de color full de google
+#define BG_BLUE "\033[44m"
 
 using namespace std;
 
+// terminal
+void obtenerTamanoTerminal(int &filas, int &columnas)
+{
+    struct winsize w;
+    ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
+    filas = w.ws_row;
+    columnas = w.ws_col;
+}
+
+// Dibujar fondo azul completo
+void fondoAzul()
+{
+    int filas, columnas;
+    obtenerTamanoTerminal(filas, columnas);
+
+    for (int i = 0; i < filas; ++i)
+    {
+        cout << BG_BLUE;
+        for (int j = 0; j < columnas; ++j)
+        {
+            cout << " ";
+        }
+    }
+}
+
 int main(){
 
-    int terminal_width = 85;
+    // Fondo azul
+    fondoAzul();
 
-vector<string> owl = {
+    int terminal_width;
+    int dummy;
+    obtenerTamanoTerminal(dummy, terminal_width);
 
-" ********************************************************************************* \t",
-" *..######..####.##.....##....###....########..##.....##..#######..##....##......* \t",
-" *.##....##..##..##.....##...##.##...##.....##.###...###.##.....##.###...##......* \t",
-" *.##........##..##.....##..##...##..##.....##.####.####.##.....##.####..##......* \t",
-" *..######...##..##.....##.##.....##.########..##.###.##.##.....##.##.##.##......* \t",
-" *.......##..##...##...##..#########.##...##...##.....##.##.....##.##..####......* \t",
-" *.##....##..##....##.##...##.....##.##....##..##.....##.##.....##.##...###......* \t",
-" *..######..####....###....##.....##.##.....##.##.....##..#######..##....##......* \t",
-" ********************************************************************************* \t",
-
-
-"  \n",
-" Seleccione el origen de su Sivarmon\n",
+    vector<string> owl = {
+        " ********************************************************************************* ",
+        " *..######..####.##.....##....###....########..##.....##..#######..##....##......* ",
+        " *.##....##..##..##.....##...##.##...##.....##.###...###.##.....##.###...##......* ",
+        " *.##........##..##.....##..##...##..##.....##.####.####.##.....##.####..##......* ",
+        " *..######...##..##.....##.##.....##.########..##.###.##.##.....##.##.##.##......* ",
+        " *.......##..##...##...##..#########.##...##...##.....##.##.....##.##..####......* ",
+        " *.##....##..##....##.##...##.....##.##....##..##.....##.##.....##.##...###......* ",
+        " *..######..####....###....##.....##.##.....##.##.....##..#######..##....##......* ",
+        " ********************************************************************************* ",
+        "",
+        " Seleccione el origen de su Sivarmon",
 "  \n",
 
         "                          ---:::::--=     =                                                         ",
@@ -49,50 +213,38 @@ vector<string> owl = {
         "                                             =--------::-===============-----------==----=          ",
         "                                                  =--:-=====================---------------*+       ",
         "                                                     ++=====================-------------+==++      ",
-        "                                                            +++++=============--------+     +-+      "
-    };
+        "                                                            +++++=============--------+     +-+     ",
+        "                                                                                                    ",
+        "                                                                                                    ",
+        "                                                                                                    ",};
 
-    
-    for (const string &line : owl) {
-        int padding = terminal_width - static_cast<int>(line.length());
-        if (padding < 0) padding = 0;
+    vector<string> menu = {
+        "--------------------------------------------------------",
+        "| 1. Ahuchapan              |      2. Santa Soul       |",
+        "| 3. Sonsonate              |      4. Chalate          |",
+        "| 5. La libertad            |      6. San Salvador     |",
+        "| 7. Cuscatlan              |      8. La paz           |",
+        "| 9. Not found              |      10. San vicente     |",
+        "| 11. Usulutan              |      12. San miguel      |",
+        "| 13. Mora(not the singer)  |      14. La Union        |",
+        "--------------------------------------------------------"};
+
+    // Mostrar arte centrado
+    for (const string &line : owl)
+    {
+        int padding = (terminal_width - (int)line.length()) / 2;
+        if (padding < 0)
+            padding = 0;
         cout << string(padding, ' ') << line << endl;
     }
 
-vector<string> left = {
-
-"",
-"",
-
- "--------------------------------------------------------\t",
- "| 1. Ahuchapan              |      2. Santa Soul       |\t",
- "| 3. Sonsonate              |      4. Chalate          |\t",
- "| 5. La libertad            |      6. San Salvador     |\t",
- "| 7. Cuscatlan              |      8. La paz           |\t",
- "| 9. Not found              |      10. San vicente     |\t",
- "| 11. Usulutan              |      12. San miguel      |\t",
- "| 13. Mora(not the singer)  |      14. La Union        |\t",
- "--------------------------------------------------------\t",
-
-};
-
-vector<string> right = {
-
-};
-    int left_width = -10;    
-
-    int max_lines = max(left.size(), right.size());
-
-    for (int i = 0; i < max_lines; ++i) {
-        string left_line = (i < (int)left.size()) ? left[i] : "";
-        string right_line = (i < (int)right.size()) ? right[i] : "";
-        
-        int space_count = terminal_width - (int)left_line.length() - (int)right_line.length();
-        if (space_count < 1) space_count = 1; 
-
-        cout << left_line << string(space_count, ' ') << right_line << endl;
+    // Mostrar menú centrado
+    for (const string &line : menu)
+    {
+        int padding = (terminal_width - (int)line.length()) / 2;
+        if (padding < 0)
+            padding = 0;
+        cout << string(padding, ' ') << line << endl;
     }
-
     return 0;
 }
-
