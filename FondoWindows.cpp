@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <algorithm>
 #include <windows.h>
 
 using namespace std;
@@ -13,10 +14,12 @@ using namespace std;
 void habilitarANSI()
 {
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
-    DWORD modo;
-    GetConsoleMode(hOut, &modo);
-    modo = ENABLE_VIRTUAL_TERMINAL_PROCESSING;
-    SetConsoleMode(hOut, modo);
+    DWORD modo = 0;
+    if (GetConsoleMode(hOut, &modo))
+    {
+        modo |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+        SetConsoleMode(hOut, modo);
+    }
 }
 
 // Obtener tamaño de la consola en filas y columnas
