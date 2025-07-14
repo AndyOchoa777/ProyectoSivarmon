@@ -1,0 +1,123 @@
+-first fight
+cpu: los aspirantes a entrenadores no logran pasar de mi y menos con un sivarmon como el tuyo.
+op: ...........
+cpu: Acaso estas retando al gran maestro Bearman?
+op: ...........
+cpu: Demuestrame lo que tienes!
+
+god 
+cpu: Tienes un buen camino por delante espero que no caigas en la avaricia de los maestros que buscan
+tener todo el poder en sus manos
+op: ........
+
+bad
+cpu: No siempre se gana pero tienes la oportunidad de volver a mi e intentar vencerme
+op: .........
+cpu: Buscame, siempre amo las revanchas
+
+-second fight 
+cpu: Eres muy obstinado para solo ser un simple aprendiz pero dudo que sepas 
+usar al maximo a tu propio sivarmon.
+op: ...........
+cpu: Solo tienes que saber que son pocos los que logran vencerme sin tantos problemas
+op: ...........
+cpu: Demuestrame lo que sabes hacer!
+
+god 
+cpu: Una gran habilidad como la nuestra no es facil de aprender, ten cuidado de como la utilices 
+tambien tu sivarmon es parte de la aventura, no debes seguir los pasos de los maestros que no conocen del equilibro
+op: ........
+cpu: Pregunta por los frentes rojo ellos podran ayudarte si quieren saber mas sobre esos maetros
+
+bad
+cpu: No siempre se gana pero tienes la oportunidad de volver a mi e intentar vencerme
+op: .........
+cpu: Espero que dejes descansar a tu sivarmon, hay posiones que pueden ayudarlo a recuperarse mejor
+
+-boss (Primero?)
+cpu: Admiro tu determinacion al llegar hasta aca superando todo sin problemas son pocos los que se atreven a hacer
+algo tan complicado como maravilloso.
+op: ............
+cpu: entrenadores asi me recuerndan a los antiguos campiones que hoy solo viven en viejas historias 
+op: ............
+cpu: Te dire mas pero tienes que ganarte mi admiracion primero
+op: ............
+
+god ending 
+cpu: Eres tal cual como ellos peleando y arriesgando todo hasta el final, espero que tengas mas posiones para seguir
+sin problemas durante tu ruta
+op: ............
+cpu: Te dire algo, ten cuidado cuando lo veas dicen que te destruye de dos golpes aun el mas poderoso cae con su poderos
+op: ............
+cpu: Los frentes rojos?? Son cosas que no oyes seguido, pero ellos aparecen si sigues brillando como lo haces
+
+regular ending
+cpu: Eres bueno pero no lo suficiente
+op:............
+cpu: siguen tu camino talvez encuentres lo que buscas, te crei imparable pero debo de admitir que sabes
+pelear como los primeros campeones.
+
+*La Victoria de los maestros*
+
+bad ending
+cpu: Se reconocer el esfuerzo cuando lo veo y admitir que peleaste hasta el final es mucho para mi 
+op: .............
+cpu: Esperare expectante tu revancha joven maestro
+
+*La ruta de los futuros maestros*
+
+secret boss (Los frentes)
+
+???: Hay una bestia suelta por tu camino, logra vencerla sin recibir tanto dan;o y hablaremos contigo 
+y te diremos todo lo que quieras saber
+op: .............
+???: Suerte
+
+
+god ending 
+los frentes: Solo existio uno capaz de hacer lo que hiciste,
+si quieres conocerlo se encuentra en las tierras perdidas al noroeste de este valle, pero cuidado el no conoce otra cosa
+que no sean los duelos
+op: ........
+
+regular ending: 
+
+op: ...........?
+op: ...........
+???: Gracias por limpiar la ruta
+op: ...........?
+???: nadie dijo nada sobre hablar
+
+* La victoria de los aventureros *
+
+bad ending
+
+op: .............
+op: .............?
+???: (desaparencen en la oscuridad de la ruta)
+
+* Los caminos del valle desconocido *
+
+secret boss (???)
+
+???: .............
+op:...............?
+
+god ending
+???: Solo un verdadero maestro es capaz de oir mis palabras
+schaff: Me dicen schaff y soy el campeon desterrado de los valles de sivarmon, 
+se que no has venido hasta aca solo para ver a @#%#%#%@#%#!@.
+schaff: Quieres seguir mis pasos y convertirete en el rey de los desterrados?
+op: ...........
+schaff: Deciciones valientes merencen maestros valientes
+op: ...........
+
+
+*La Victoria de los desterrados*
+
+bad ending
+
+???: ..................
+???: ..................
+
+*Los aprendices malditos*

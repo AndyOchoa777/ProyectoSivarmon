@@ -1,0 +1,97 @@
+1 GOLPE_ESPACIAL 5 6 0.80  
+El sivarmon finta un golpe para que  
+su siguiente golpe tenga alta probabilidad de ser critico.
+
+2 GOLPE_FAMANTE 3 1 35  
+El sivarmon canaliza su energia y la deja salir  
+en forma de golpe potenciado.
+
+3 CORTE 1 4 0.10  
+El sivarmon confunde a su oponente con un corte  
+aumentando tu velocidad.
+
+4 DOBLE_PATADA 1 1 35  
+El sivarmon logra conectar una patada voladora.
+
+5 REFLEJO 5 6 0.80  
+El sivarmon reflecta el damage recibido concenzandolo  
+en una energia que baja la defensa del rival.
+
+6 COCASO 1 1 50  
+El sivarmon puede hacerle un golpe con la cabeza el  
+cual es critico.
+
+7 CHORROS 2 4 0.40  
+El sivarmon absorve la humedad del entorno y refresca  
+su ser haciendo que este se mueva mas rapido.
+
+8 MARTILLAZO 2 1 30  
+El sivarmon golpea ferozmente al otro sivarmon.
+
+9 RUEDA_FLAMIANTE 3 5 0.35  
+El sivarmon lanza flamas a su oponente  
+bajando el ataque de este.
+
+10 ALBOROTO 3 2 0.50  
+El sivarmon potencia su siguiente ataque  
+siend capaz de hacer un ataque critico.
+
+11 IMITACION 5 6 0.70  
+El sivarmon devuelve el ataque recivido.
+
+12 DANZA_DICAOS 1 3 0.25  
+El sivarmon aprovecha a hacer una danza la cual  
+aumenta su defensa.
+
+13 PUNNO_MOJADO 2 1 30  
+El sivarmon lanza un golpe potenciado por un chorro de agua  
+haciendole damage de agua.
+
+14 GARRA_BRUTA 1 3 0.20  
+El sivarmon ara;a a su oponente reducciendo su defensa.
+
+15 SILBATO 4 7 0.10  
+El sivarmon aturde a su oponente con  
+un silbatazo el cual baja la velocidad del oponente.
+
+16 FURIA_SILVESTRE 4 1 40  
+El sivarmon ataca a su enemigo desde el suelo con ayuda  
+del terreno.
+
+17 ABATIDOR 4 3 0.15  
+El sivarmon fatiga a su oponente con pequen;os golpes  
+y logra hacer que baje su guardia.
+
+18 CASTIGO_FUGAZ 3 6 0.4  
+El sivarmon hace ataques rapidos aturdiendo  
+al rival y bajando su defensa.
+
+19 COLMILLO_IGNEO 3 1 40  
+El sivarmon aumenta su poder ignifugo y pega un gran ataque  
+flameante el cual genera una gran cantidad de damage.
+
+20 GOLPE_LAZO 4 5 0.15  
+El sivarmon lanza golpes con un lazo de hojas dejandolo acorralado  
+reduciendo el ataque de este.
+
+21 GOLPE_REAL 5 1 45  
+El sivarmon atrae a su oponente y suelta todo su poder sobre el.
+
+22 IRA_IMAGINARIA 5 6 0.35  
+El sivarmon es capaz de atrapar a su oponente en una  
+trampa mental la cual llena de ira al sivarmon enemigo reduciendo su  
+defensa bastante.
+
+23 RUIDO_SINCRONICO 5 7 0.4  
+El sirvamon confunde a su oponente y logra causar  
+que el enemigo pierda mucha velocidad.
+
+24 CONCHA_FILO 2 1 40  
+El sivarmon logra hacer un ataque cortante muy poderoso.
+
+25 FURIA_DE_LOS_CAIDOS 5 6 0.5  
+El sivarmon obtiene por un momento el poder suficiente para  
+amedrentar a su enemigo bajando bajandole su defensa mucho.
+
+26 MAESTRO 1 1 0.2  
+Los maestros utilizan su conocimiento con los sivarmons para retar a los futuros maestros

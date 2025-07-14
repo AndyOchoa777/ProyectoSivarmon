@@ -1,0 +1,15 @@
+1 CASCO 2 0.4
+El sivarmon es equipado con un asco que le ayuda
+a reducir el damage del siguiente ataque.
+
+2 PUPUSA 1 25
+El sivarmon es alimentado con una rica Pupusa
+de frijol con queso recuperando vitalidad.
+
+3 CAPIRUCHO 3 20
+El sivarmon es equipado con un peligroso
+capirucho que le ayuda a aumentar su velocidad
+
+4 SALVADORINI_TACUAZZINI 1 35
+El sivarmon recibe un aliado que le ayuda
+a recuperar vitalidad
