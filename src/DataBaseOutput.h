@@ -59,6 +59,18 @@ struct ObjetosDataBase{
 
 };
 
+struct PuntuajesDataBase{
+    int orden;
+    string nickname;
+    int puntos;
+
+};
+
+struct PlayerNick{
+    string nick;
+    int puntos;
+};
+
 //Function to call the information of a specific Sivarmon
 SivarmonDataBase SivarmonesCall(int eleccion){
     //Define variables.
@@ -316,4 +328,110 @@ ObjetosDataBase ObjetosCall(int seleccion){
         return {};
     }
 
+}
+
+void Tabla(PlayerNick User){
+    ifstream Clasificacion("src/DataBase/Tabla.txt");
+    int puesto = 1;
+    bool sos = true;
+    if (Clasificacion.is_open())
+    {
+        PuntuajesDataBase Viejos;
+        ofstream tempo("src/DataBase/temp.txt");
+
+        while(Clasificacion >> Viejos.orden >> Viejos.nickname >> Viejos.puntos){
+           
+            if (User.puntos > Viejos.puntos && sos)
+            {
+                sos = false;
+                tempo << puesto << " " << User.nick << " " << User.puntos << endl;
+                puesto++;
+            }
+            
+           if(Viejos.nickname != User.nick){
+             tempo << puesto << " " << Viejos.nickname << " " << Viejos.puntos << endl;
+            puesto++;
+           }
+                        
+        }
+
+        if (sos)
+        {
+             tempo << puesto << " " << User.nick << " " << User.puntos << endl;
+        }
+
+        Clasificacion.close();
+        tempo.close();
+
+        remove("src/DataBase/Tabla.txt");
+        rename("src/DataBase/temp.txt", "src/DataBase/Tabla.txt");
+
+        
+
+    }else
+    {
+        ofstream Creacion("src/DataBase/Tabla.txt");
+        if (Creacion.is_open())
+        {
+            PuntuajesDataBase nuevo;
+            nuevo.orden = 1;
+            nuevo.nickname = User.nick;
+            nuevo.puntos = User.puntos;
+
+            Creacion << nuevo.orden << " " << nuevo.nickname << " " << nuevo.puntos << endl;
+            Creacion.close();
+        }
+        
+    }
+    
+    
+}
+
+vector<PuntuajesDataBase> TablaCall(){
+    PuntuajesDataBase subjeto;
+    vector<PuntuajesDataBase> Tabloide;
+    ifstream Tablon("src/DataBase/Tabla.txt");
+    if (Tablon.is_open())
+    {
+        while (Tablon >> subjeto.orden >> subjeto.nickname >> subjeto.puntos)
+        {
+            Tabloide.push_back(subjeto);
+        }
+
+        return Tabloide;
+
+
+
+    }
+    
+    return {};
+}
+
+void EliminarAlguien(string nicksito){
+    ifstream archivo("src/DataBase/Tabla.txt");
+    ofstream tempor("src/DataBase/Temporal.txt");
+    PuntuajesDataBase S;
+    int puesto = 1;
+    if (archivo.is_open() && tempor.is_open())
+    {
+        while (archivo >> S.orden >> S.nickname >> S.puntos)
+        {
+            if (S.nickname != nicksito)
+            {
+            tempor << puesto << " " << S.nickname << " " << S.puntos << endl;
+            puesto++;
+            }
+            
+        }
+
+        archivo.close();
+        tempor.close();
+
+        remove("src/DataBase/Tabla.txt");
+        rename("src/DataBase/Temporal.txt", "src/DataBase/Tabla.txt");
+        
+    }else{
+        cout<<"nombe ija";
+    }
+    
 }
