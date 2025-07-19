@@ -41,24 +41,30 @@
             DAAD###OOOOOOOOOD##  
 
 3
-                          --                       
-                        ------                     
-     DD               ----------                 
-     DDD            --------------                 
-      DDD         ------------------
-     DDDD          NNNNNNNNNNNNNNNN             
-      DDDD        NNNO++NNNNO++NNNN    NNN       
-       HD        NNNNO++N==NO++NNNNN  NNNNN      
-        H       NNNNNN========NNNNNNNNNNNNN       
-       HNNNNNNNNNNNNNNN======NNNNNNNNNNNN         
-       NNNNNNNNNNNNNNNNN====NNNNNNNNN             
-        NNN      NNNNNNNNNNNNNNNNNNN              
-        DDD       NNNNNNNNNNNNNNNNN               
-         DD        NNNNNNNNNNNNNNN                
-          D           NNNNNNNNNN                  
-          DD         NNNNNNNNNNNN                 
-          DD        NNNNNN   NNNNN             
-                  ========   ========
+                                      --                                
+                                  -------                             
+        B                     -----------------                          
+        BB                 ----------------------                       
+        BBB                 --------------------                        
+        BBBb           -----------------------------                  
+        BBBBB           ---------------------------                    
+        BBBBB             NNNN################NNN                      
+         BBBBB           NNNN#\\\########\\\###NNN       ******         
+          ----          NNNN##OOO#######OOO#####NNN    *********          
+          ----          NNNN##OOO#######OOO#####NNN   @@@@@@@@@@         
+           ---          NNNN#\\###########\\###NNNN**@@@@@@@@         
+          ****@@@@***    NNN###B#B#B#B#B#B#B##NNNN*********             
+         *****@@@@*******NNNN###B#B#B#B#B#B#NNNN*******                
+         *****@@@@********NNNNN###########NNNNNNNNN                    
+         *****@@@@*******NNNNNNNNNNNNNNNNNNNNNNNNN                    
+          -----          NNNNNNNNNNNNNNNNNNNNNNNN                     
+             --           NNNNNNNNNNNNNNNNNNNNNN                     
+             --            NNNNNNNNNNNNNNNNNNNN                       
+              -              NNNNNNNNNNNNNNNN                         
+              -              NNNNNNNNNNNNNNNN                         
+              --            %@@@@@%    %@@@@@@%                        
+              ---         %%@@@@@@@     @@@@@@@%                      
+                         %@@%%@@%%%    %%%%@@%%@%%     
 
 4
      OOOOOOOOOOOO           OOOOOOOOOOO
@@ -206,7 +212,7 @@ OOOOO-----------OOOOOOOOOOOO------
    OO*******************%OO                                     
   OO************+++*%+++*%OO                                     
 OO%%************+OO*%+OO****OO                                   
-OO**************+OO*%+OO****OO                                   
+OO**************+O?*%+O?****OO                                   
 OO*********%%%%********%%%**OO                                   
 OO%%*********************%**OO                                   
   OO%**%%%********%%%**%%%%OO                                   
