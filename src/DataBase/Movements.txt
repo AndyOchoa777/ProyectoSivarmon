@@ -6,14 +6,14 @@ su siguiente golpe tenga alta probabilidad de ser critico.
 El sivarmon canaliza su energia y la deja salir  
 en forma de golpe potenciado.
 
-3 CORTE 1 4 0.10  
+3 CORTE 1 1 10  
 El sivarmon confunde a su oponente con un corte  
 aumentando tu velocidad.
 
 4 DOBLE_PATADA 1 1 35  
 El sivarmon logra conectar una patada voladora.
 
-5 REFLEJO 5 6 0.80  
+5 REFLEJO 5 6 26  
 El sivarmon reflecta el damage recibido concenzandolo  
 en una energia que baja la defensa del rival.
 
@@ -21,7 +21,7 @@ en una energia que baja la defensa del rival.
 El sivarmon puede hacerle un golpe con la cabeza el  
 cual es critico.
 
-7 CHORROS 2 4 0.40  
+7 CHORROS 2 1 10  
 El sivarmon absorve la humedad del entorno y refresca  
 su ser haciendo que este se mueva mas rapido.
 
@@ -39,7 +39,7 @@ siend capaz de hacer un ataque critico.
 11 IMITACION 5 6 0.70  
 El sivarmon devuelve el ataque recivido.
 
-12 DANZA_DICAOS 1 3 0.25  
+12 DANZA_DICAOS 1 3 2  
 El sivarmon aprovecha a hacer una danza la cual  
 aumenta su defensa.
 
@@ -70,7 +70,7 @@ al rival y bajando su defensa.
 El sivarmon aumenta su poder ignifugo y pega un gran ataque  
 flameante el cual genera una gran cantidad de damage.
 
-20 GOLPE_LAZO 4 5 0.15  
+20 GOLPE_LAZO 4 1 15  
 El sivarmon lanza golpes con un lazo de hojas dejandolo acorralado  
 reduciendo el ataque de este.
 
@@ -89,9 +89,9 @@ que el enemigo pierda mucha velocidad.
 24 CONCHA_FILO 2 1 40  
 El sivarmon logra hacer un ataque cortante muy poderoso.
 
-25 FURIA_DE_LOS_CAIDOS 5 6 0.5  
+25 FURIA_DE_LOS_CAIDOS 5 1 50  
 El sivarmon obtiene por un momento el poder suficiente para  
 amedrentar a su enemigo bajando bajandole su defensa mucho.
 
-26 MAESTRO 1 1 0.2  
+26 MAESTRO 1 1 30  
 Los maestros utilizan su conocimiento con los sivarmons para retar a los futuros maestros
