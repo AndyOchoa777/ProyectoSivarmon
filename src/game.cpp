@@ -66,6 +66,16 @@ void GameStart() {
                 Jugador, Enemy, Defeat, NormalWin, GoodWin, VidaOriginal1);
                 PrintLifeBar(Jugador.vida, VidaOriginal1);
                 PrintLifeEnemy(Enemy.vida, EnemyOriginalLife);
+
+                if (IsMove)
+                {
+                    Usuario.puntos+= 50;
+                }else{
+                    Usuario.puntos+= 30;
+                }
+
+                Usuario.puntos-= 20;
+                
             
         } while (siguen && maxTurns<=19);
         
@@ -84,18 +94,27 @@ void GameStart() {
             // system("cls");
             PrintBackgroundDialogue("YouWinBackground.txt", YourWinColorID, FightBattles[battle][1]);
             sleep_for(0.1s);
+            Tabla(Usuario);
             return; //Go back to the main menu
         }
         else if(NormalWin){
             PrintBackgroundDialogue("ParadiseBackground.txt", ParadiseColorID, FightBattles[battle][2]);
             no_repetir= false;
+            Usuario.puntos+= 100;
         }
         else{
             PrintBackgroundDialogue("ParadiseBackground.txt", ParadiseColorID, FightBattles[battle][3]);
             no_repetir=false;
+            Usuario.puntos+= 100;
         }
         sleep_for(0.1s);
     }
+
+    Usuario.puntos+= 500;
+    Tabla(Usuario);
+    
+
+
     // call the found funtion to print the lost sprite
     FOUND_ED();
     vector<string> FinalEnd = {
