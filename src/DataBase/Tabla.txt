@@ -1,6 +1,6 @@
-1 superadordepibes 2610
-2 Juan 300
-3 Sofproo 240
+1 Sofproo 3200
+2 superadordepibes 2610
+3 Juan 300
 4 perico 180
 5 pibeador 90
 6 loco 40
