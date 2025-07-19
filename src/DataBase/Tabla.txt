@@ -1,6 +1,7 @@
-1 Sofproo 3200
-2 superadordepibes 2610
-3 Juan 300
-4 perico 180
-5 pibeador 90
-6 loco 40
+1 BlueSwarley 999999999999
+2 Sofproo 3200
+3 superadordepibes 2610
+4 Juan 300
+5 perico 180
+6 pibeador 90
+7 loco 40
