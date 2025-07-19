@@ -2,6 +2,25 @@
 #include "DataBaseOutput.h"
 
 int lines, bottomline;
+map<char, int> spritesID = {
+
+    {'N', 130},
+    {'-', 172},
+    {'D', 249},
+    {'O', 0},
+    {'B', 231},
+    {'H', 239},
+    {'#', 249},
+    {'+', 231},
+    {'@', 118},
+    {'&', 208},
+    {'$', 196},
+    {'=', 166},
+    {'*', 204},
+    {'<', 220},
+    {'%', 206},
+};
+
 //print enemies
 void PrintBattleEnemies(int SivarmonSelected, int Enemy){
     SetConsoleOutputCP(CP_UTF8);
@@ -59,7 +78,7 @@ void PrintBattleEnemies(int SivarmonSelected, int Enemy){
             SetConsoleCursorPosition(hConsole, pos);
             for (char ch : line) {
                 if (ch != ' ') {
-                    cout << ch; //if is not an empty space just print it
+                    cout << "\033[48;5;" << spritesID[ch] << "m " << RESET; //if is not an empty space just print it
                 } else {
                     cout << "\033[C"; //move the cursor to the next space
                 }
@@ -73,7 +92,7 @@ void PrintBattleEnemies(int SivarmonSelected, int Enemy){
             SetConsoleCursorPosition(hConsole, pos);
             for (char ch : line) {
                 if (ch != ' ') {
-                    cout << ch; //same as before
+                    cout << "\033[48;5;" << spritesID[ch] << "m " << RESET; //same as before
                 } else {
                     cout << "\033[C"; //same as before
                 }
