@@ -40,12 +40,12 @@ void drawBackgroundWithOvals() {
             if (i < half) {
                 cout << BACK_BLUE << " ";    // for the sky
             } else {
-                if (isInOval(j, i, c1_x, c1_y, radiusX, radiusY) ||
-                    isInOval(j, i, c2_x, c2_y, radiusX, radiusY)) { //for clouds
-                    cout << BG_WHITE << " "; 
-                } else {
+                // if (isInOval(j, i, c1_x, c1_y, radiusX, radiusY) ||
+                //     isInOval(j, i, c2_x, c2_y, radiusX, radiusY)) { //for clouds
+                //     cout << BG_WHITE << " "; 
+                // } else {
                     cout << BACK_GREEN << " ";  // print the grass background
-                }
+                // }
             }
         }
         cout << RESET << '\n'; //reset all
