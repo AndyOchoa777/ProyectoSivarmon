@@ -1,76 +1,9 @@
 //Creation of the necessary libraries.
+#ifndef DATABASEOUTPUT_H
+#define DATABASEOUTPUT_H
+
 #include "header.h"
 //The order of the structures, is the order of how each group of data is in its respective txt.
-struct SivarmonDataBase{
-    int id; //Identificator of each Sivarmon.
-    string nombre;// Name of each Sivarmon.
-    int idTipo;// Identificator of each Type.
-    int vida;// Life of each Sivarmon, example: 100
-    float defensa;// Defense of each Sivarmon, example: 0.25
-    int velocidad;// Speed of each Sivarmon, example: 45
-    int idMovimientos[4];//Array with 4 moves identificators , example: [1,3,4,2].
-    int idSprite;// Sprite Identificator.
-
-};
-
-struct MovimientosDataBase{
-    int id;//Identificator of each move.
-    string nombre;//Name of each move.
-    int idTipo;//Identificator of each Type.
-    int accion;//Type of action that the move will do.
-    /*
-    The cases for this variables are:
-
-    1 = damage.
-    2 = damage buff.
-    3 = defense buff.
-    4 = speed buff.
-    5 = damage debuff.
-    6 = defense debuff.
-    7 = speed debuff.
-    */
-    float numero;//Numeric value of the move. example: 30, 0.30, 0.10
-    string descripcion;//Description of what the move does.
-
-};
-
-struct TiposDataBase{
-    int id;//Identificator of the type.
-    string nombre;//Name of the type.
-};
-
-struct SpritesDataBase{
-    int id;// Identificator of sprite.
-    vector<string> Sprite; // Sprite.
-};
-
-struct ObjetosDataBase{
-    int id; // Identificator of Objet.
-    string nombre;// Name of the objet.
-    int accion; //Type of action that the move will do.
-    /*
-    1 = heal
-    2 = buff defense
-    3 = buff speed
-    4 = buff attack
-    */    
-    float numero;// Numeric value of the Objet.
-    string descripcion;// Description of what the objet does.
-
-};
-
-struct PuntuajesDataBase{
-    int orden;
-    string nickname;
-    int puntos;
-
-};
-
-struct PlayerNick{
-    string nick;
-    int puntos;
-};
-
 //Function to call the information of a specific Sivarmon
 SivarmonDataBase SivarmonesCall(int eleccion){
     //Define variables.
@@ -339,6 +272,7 @@ void Tabla(PlayerNick User){
         PuntuajesDataBase Viejos;
         ofstream tempo("src/DataBase/temp.txt");
 
+
         while(Clasificacion >> Viejos.orden >> Viejos.nickname >> Viejos.puntos){
            
             if (User.puntos > Viejos.puntos && sos)
@@ -350,8 +284,8 @@ void Tabla(PlayerNick User){
             
            if(Viejos.nickname != User.nick){
              tempo << puesto << " " << Viejos.nickname << " " << Viejos.puntos << endl;
-            puesto++;
-           }
+                puesto++;
+            }
                         
         }
 
@@ -366,7 +300,6 @@ void Tabla(PlayerNick User){
         remove("src/DataBase/Tabla.txt");
         rename("src/DataBase/temp.txt", "src/DataBase/Tabla.txt");
 
-        
 
     }else
     {
@@ -391,6 +324,7 @@ vector<PuntuajesDataBase> TablaCall(){
     PuntuajesDataBase subjeto;
     vector<PuntuajesDataBase> Tabloide;
     ifstream Tablon("src/DataBase/Tabla.txt");
+
     if (Tablon.is_open())
     {
         while (Tablon >> subjeto.orden >> subjeto.nickname >> subjeto.puntos)
@@ -407,17 +341,15 @@ vector<PuntuajesDataBase> TablaCall(){
     return {};
 }
 
-void EliminarAlguien(string nicksito){
+void EliminarAlguien(int nicksito){
     ifstream archivo("src/DataBase/Tabla.txt");
     ofstream tempor("src/DataBase/Temporal.txt");
+
     PuntuajesDataBase S;
     int puesto = 1;
-    if (archivo.is_open() && tempor.is_open())
-    {
-        while (archivo >> S.orden >> S.nickname >> S.puntos)
-        {
-            if (S.nickname != nicksito)
-            {
+    if (archivo.is_open() && tempor.is_open()){
+        while (archivo >> S.orden >> S.nickname >> S.puntos){
+            if (S.orden != nicksito){
             tempor << puesto << " " << S.nickname << " " << S.puntos << endl;
             puesto++;
             }
@@ -429,9 +361,11 @@ void EliminarAlguien(string nicksito){
 
         remove("src/DataBase/Tabla.txt");
         rename("src/DataBase/Temporal.txt", "src/DataBase/Tabla.txt");
+
         
     }else{
-        cout<<"nombe ija";
+        //cout<<"nombe ija";
     }
     
 }
+#endif
