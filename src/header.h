@@ -19,11 +19,77 @@ using namespace std::this_thread;
 using namespace std::chrono_literals;
 
 //Structs
-struct SivarmonDataBase;
-struct MovimientosDataBase;
-struct TiposDataBase;
-struct SpritesDataBase;
-struct ObjetosDataBase;
+struct SivarmonDataBase{
+    int id; //Identificator of each Sivarmon.
+    string nombre;// Name of each Sivarmon.
+    int idTipo;// Identificator of each Type.
+    int vida;// Life of each Sivarmon, example: 100
+    float defensa;// Defense of each Sivarmon, example: 0.25
+    int velocidad;// Speed of each Sivarmon, example: 45
+    int idMovimientos[4];//Array with 4 moves identificators , example: [1,3,4,2].
+    int idSprite;// Sprite Identificator.
+
+};
+
+struct MovimientosDataBase{
+    int id;//Identificator of each move.
+    string nombre;//Name of each move.
+    int idTipo;//Identificator of each Type.
+    int accion;//Type of action that the move will do.
+    /*
+    The cases for this variables are:
+
+    1 = damage.
+    2 = damage buff.
+    3 = defense buff.
+    4 = speed buff.
+    5 = damage debuff.
+    6 = defense debuff.
+    7 = speed debuff.
+    */
+    float numero;//Numeric value of the move. example: 30, 0.30, 0.10
+    string descripcion;//Description of what the move does.
+
+};
+
+struct TiposDataBase{
+    int id;//Identificator of the type.
+    string nombre;//Name of the type.
+};
+
+struct SpritesDataBase{
+    int id;// Identificator of sprite.
+    vector<string> Sprite; // Sprite.
+};
+
+struct ObjetosDataBase{
+    int id; // Identificator of Objet.
+    string nombre;// Name of the objet.
+    int accion; //Type of action that the move will do.
+    /*
+    1 = heal
+    2 = buff defense
+    3 = buff speed
+    4 = buff attack
+    */    
+    float numero;// Numeric value of the Objet.
+    string descripcion;// Description of what the objet does.
+
+};
+
+struct PuntuajesDataBase{
+    int orden;
+    string nickname;
+    int puntos;
+
+};
+
+struct PlayerNick{
+    string nick;
+    int puntos;
+};
+
+PlayerNick JugadorNick = {"Motomoto", 0};
 
 // Funtions:
 //Utils and Main menu
@@ -36,6 +102,7 @@ void Credits();
 //GameStartMenu and dialogue
 void StartGameMenu();
 void PrintTypewriter(const string& text);
+void PrintSivarMesagge(const vector<string>& map);
 void NotFoundMessage();
 void PrintBackgroundDialogue(const string& filename, const map<char, int>& ColorMap, const string& dialogueName);
 void RunCharacterMenu();
@@ -53,6 +120,17 @@ MovimientosDataBase MovimientosCall(int eleccion);
 TiposDataBase TiposCall(int seleccion);
 SpritesDataBase SpritesCall(int seleccion);
 ObjetosDataBase ObjetosCall(int seleccion);
+void Tabla(PlayerNick User);
+vector<PuntuajesDataBase> TablaCall();
+void EliminarAlguien(int nicksito);
+
+//Profiles
+int OptionsTable(const vector<string>& nombres);
+int NavegateUsers(const vector<PuntuajesDataBase> &Users);
+void HighestScores(const vector<PuntuajesDataBase> &Users);
+void Aviso(const string line);
+string AddUser();
+PlayerNick PLAYER();
 //Battle
 float Efectividades(int& ataque, int& defensa);
 int randomNumber();
