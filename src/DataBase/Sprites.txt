@@ -2,7 +2,7 @@
               @@@@@@@@@@@@@@@@ 
               @@@@@@@@@@@@@@@@ 
               @@@@@+++++#@@@@#+++++ 
-              @@@@@+++++#@@@@#+++++
+              @@@@@+++OO#@@@@#+++OO
               @@@@@@@@@@@@@@@@@@@@@
               @@@@@@@@@@@@@@@@@@@@@
               @@@@@@@@@@@@@@@@@@@@@
@@ -47,18 +47,18 @@
      DDD            --------------                 
       DDD         ------------------
      DDDD          NNNNNNNNNNNNNNNN             
-      DDDD        NNN+++NNNN+++NNNN    NNN       
-       HD        NNNN+++N==N+++NNNNN  NNNNN      
+      DDDD        NNNO++NNNNO++NNNN    NNN       
+       HD        NNNNO++N==NO++NNNNN  NNNNN      
         H       NNNNNN========NNNNNNNNNNNNN       
        HNNNNNNNNNNNNNNN======NNNNNNNNNNNN         
-      HNNNNNNNNNNNNNNNNN====NNNNNNNNN             
-      HNNNN      NNNNNNNNNNNNNNNNNNN              
+       NNNNNNNNNNNNNNNNN====NNNNNNNNN             
+        NNN      NNNNNNNNNNNNNNNNNNN              
         DDD       NNNNNNNNNNNNNNNNN               
          DD        NNNNNNNNNNNNNNN                
           D           NNNNNNNNNN                  
           DD         NNNNNNNNNNNN                 
           DD        NNNNNN   NNNNN             
-                  BBBBBBBB   BBBBBBB
+                  ========   ========
 
 4
      OOOOOOOOOOOO           OOOOOOOOOOO
@@ -66,8 +66,8 @@
      OOOOOO-----------------------
      OOOOOO-----------------------
      ------------+++++------++++++
-     ------------+++++------++++++
-     ------------+++++------++++++
+     ------------+++OO------++++OO
+     ------------+++OO------++++OO
      -----------------------------
      ------------------OOOOOOOOOOO
      ------------------OOOOOOOOOOO
@@ -88,8 +88,8 @@ OOOOO-----------OOOOOOOOOOOO------
              eeeee          eeeee
              eeeee          eeeee
              eeeeeeeeeeeeeeeeeeee
-             eeeee+++++eeeee+++++
-             eeeee+++++eeeee+++++
+             eeeee++OOOeeeee++OOO
+             eeeee++OOOeeeee++OOO
              eeeeeeeeee=====eeeee
              eeeeeeeeee=====eeeee
         eeeee\\\\\\\\\\\\\\\     @@@@@
@@ -130,9 +130,9 @@ OOOOO-----------OOOOOOOOOOOO------
                   O\\O              
                O\\\\\\\\O                
               O\\\\\\\\\O              
-      O      \\\\\\\\\\\\O              
-       OO  \\+++\\++++\\\\O             
-      OO   \\++++\\++++\\\\O             
+      O     \\\\\\\\\\\\\O              
+       OO  \+OO+\\+OO+\\\\O             
+      OO   \\+OO+\\+OO+\\\\O             
             \\\\\\\\\\\\\\\O    O      
              \\\\\\   \\\\\\\OOOOOO      
               \\\\\\\   \\\\\\O  O       
@@ -187,8 +187,8 @@ OOOOO-----------OOOOOOOOOOOO------
    N---NN         NN--------------NN        
    N---N          -------NNNN---NNN-N        
    N---N        NN----NNNNNNNNNNNNNNNN      
-   N---N      NN------NNNN+++NNN+++NN---    
-   N---N      NN------NNNN+++NNN+++NN----  
+   N---N      NN------NNNN+OONNN+OONN---    
+   N---N      NN------NNNN+OONNN+OONN----  
    N---N        NN----NNNNNNNNNNNNNNN---
    N---N           N-----NNNNNNNNNN          
    N-----N        N-----NNNNNNNNNNN          
@@ -204,12 +204,12 @@ OOOOO-----------OOOOOOOOOOOO------
      O*****************OO                                       
     OO******************OO                                       
    OO*******************%OO                                     
-  OO*************++*%++**%OO                                     
-OO%%*************++*%++*****OO                                   
-OO***************++*%++*****OO                                   
+  OO************+++*%+++*%OO                                     
+OO%%************+OO*%+OO****OO                                   
+OO**************+OO*%+OO****OO                                   
 OO*********%%%%********%%%**OO                                   
 OO%%*********************%**OO                                   
-  OO%**++%********%++**++%%OO                                   
+  OO%**%%%********%%%**%%%%OO                                   
     OOO%***************%OOOO                                     
       OOOO%***********%OOOO                                       
     OO%%%OOOOOOOOOOOOOO%%%OO                                     
