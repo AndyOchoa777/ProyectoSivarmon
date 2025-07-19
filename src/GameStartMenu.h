@@ -1,5 +1,9 @@
+#ifndef GAMESTARTMENU_H
+#define GAMESTARTMENU_H
+
 #include "menu.h"
 #include "utils.cpp"
+#include "DataBaseOutput.h"
 int SelecterCharacter = 0;
 
 void StartGameMenu(){
@@ -80,9 +84,11 @@ void RunCharacterMenu(){
         sleep_for(1s);
         
     }
+    JugadorNick = PLAYER(); 
     StartGameMenu(); //run the game start
     RunInteractiveMenu(); //run the iterative menu
     // cout<<"Aqui si llega\n";
     sleep_for(600ms);
     // system("cls");
 }
+#endif
