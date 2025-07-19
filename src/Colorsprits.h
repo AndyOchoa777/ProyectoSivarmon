@@ -39,7 +39,7 @@ while (getline(file, line)) {
     if (line.empty()) 
         continue;
 
-    // Detecta encabezado de sprite (línea que empieza con dígito)
+   
     if (isdigit(line[0])) {
         if (!currentSprite.empty()) {
             allSprites.push_back(currentSprite);
@@ -47,7 +47,7 @@ while (getline(file, line)) {
         }
     }
     else {
-        // Construye la línea coloreada
+       
         string coloredLine;
         for (char c : line) {
             auto it = spritesID.find(c);
@@ -56,7 +56,7 @@ while (getline(file, line)) {
                                 + to_string(it->second)
                                 + "m";
             }
-            // Si no está en el mapa, usa color por defecto
+           
             coloredLine += c;
             coloredLine += reset;
         }
@@ -64,7 +64,7 @@ while (getline(file, line)) {
     }
 }
 
-// Agrega el último sprite si existe
+
 if (!currentSprite.empty()) {
     allSprites.push_back(currentSprite);
 }
