@@ -3,7 +3,7 @@
 #include "battle.h"
 #include "HealthBar.h"
 #include "Found.h"
-
+#include "OptionsTable.h"
 
 bool no_repetir = true;
 
@@ -15,14 +15,9 @@ void GameStart() {
         cout << BG_BLACK;
         RunCharacterMenu();
     }
-    
-    vector<vector<string>> FightBattles = {
-        {"FirstBattle.txt", "FirstBattleDefeat.txt", "FirstBattleWin.txt", "FirstBattleWin.txt"},
-        {"SecondBattle.txt", "SecondBattleDefeat.txt", "SecondBattleWin.txt", "SecondBattleWin.txt"},
-        {"LeaguePresident.txt", "LeaguePresidentDefeat.txt", "LeaguePresidentWin.txt", "LeaguePresidentWin.txt"},
-        {"SecretBoss.txt", "SecretBossDefeat.txt", "SecretBossNormalWin.txt", "SecretBossGoodWin.txt"},
-        {"FinalBoss.txt", "FinalBossDefeat.txt", "FinalBossNormalWin.txt", "FinalBossGoodWin.txt"}
-    };
+    //Aqui esta el usuario
+    PlayerNick Usuario = JugadorNick;// el usuario ya esta seleccionado y definido en otro archivo solo es de ocuparlo normal
+
 
     vector<int> BattleEnemies;
     bool Defeat = false, NormalWin = false, GoodWin = false;
