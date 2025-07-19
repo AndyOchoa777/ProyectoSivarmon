@@ -19,6 +19,7 @@ map<char, int> spritesID = {
     {'*', 204},
     {'<', 220},
     {'%', 206},
+    {'?', 39}
 };
 
 //print enemies
