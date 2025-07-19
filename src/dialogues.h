@@ -1,4 +1,13 @@
+#ifndef DIALOGUES_H
+#define DIALOGUES_H
 #include "header.h"
+vector<vector<string>> FightBattles = {
+        {"FirstBattle.txt", "FirstBattleDefeat.txt", "FirstBattleWin.txt", "FirstBattleWin.txt"},
+        {"SecondBattle.txt", "SecondBattleDefeat.txt", "SecondBattleWin.txt", "SecondBattleWin.txt"},
+        {"LeaguePresident.txt", "LeaguePresidentDefeat.txt", "LeaguePresidentWin.txt", "LeaguePresidentWin.txt"},
+        {"SecretBoss.txt", "SecretBossDefeat.txt", "SecretBossNormalWin.txt", "SecretBossGoodWin.txt"},
+        {"FinalBoss.txt", "FinalBossDefeat.txt", "FinalBossNormalWin.txt", "FinalBossGoodWin.txt"}
+    };
 
 map<char, int> ParadiseColorID = {
     {'|', 249},
@@ -148,3 +157,4 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
 }
 
 
+#endif
