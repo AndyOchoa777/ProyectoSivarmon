@@ -21,19 +21,14 @@ float Efectividades(int& ataque, int& defensa){
 
     auto it  = efectividad.find({ataque, defensa});
 
-    if (ataque != 1 || defensa != 1)
-    {
-        if (it != efectividad.end())
-        {
-            return it->second;
-        }
-        
-    }else
-    {
+    
+    if (ataque == 1 && defensa == 1){
         return 0.0f;
-    }   
-
-    return 0.0f;
+    }
+    if (it != efectividad.end()){
+        return it->second;
+    }
+    return 1.0f; 
 }
 
 int randomNumber(){
